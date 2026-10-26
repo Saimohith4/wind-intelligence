@@ -1,3 +1,11 @@
+## Live Demo
+
+- **Frontend:** https://wind-intelligence-frontend.onrender.com
+- **Backend API:** https://wind-intelligence-4h0x.onrender.com
+- **API documentation:** https://wind-intelligence-4h0x.onrender.com/docs
+
+The application evaluates January 2026 UK wind-generation forecasts against actual generation using Elexon FUELHH and WINDFOR data. Forecast selection uses a documented 18:00 UTC preceding-day cutoff assumption.
+
 # Wind Intelligence
 
 A full-stack analytics platform for evaluating UK wind-generation forecasts against actual generation data for January 2026. Built for the REint Full Stack SWE Challenge.
