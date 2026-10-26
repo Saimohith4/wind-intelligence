@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: ./backend
+    ports: ["8000:8000"]
+    environment:
+      DATA_DIR: /app/data
+      DECISION_CUTOFF_HOUR_UTC: "18"
+      CORS_ORIGINS: http://localhost:5173
+    volumes:
+      - ./backend/data:/app/data
+  frontend:
+    build: ./frontend
+    ports: ["5173:5173"]
+    environment:
+      VITE_API_BASE_URL: http://localhost:8000
+    depends_on: [backend]
